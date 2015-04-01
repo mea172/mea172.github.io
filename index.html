@@ -4,24 +4,230 @@
     <meta charset='utf-8'>
     <title>Michael Adams</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Orbitron|Raleway' rel='stylesheet' type='text/css'>
+
+    <script>
+      $(document).ready(function() {
+        
+      })
+    </script>
 
     <style>
+      /* Main Style & Utils */
       body {
         margin: 0;
         padding: 0;
-        font-family: sans-serif;
+        font-family: 'Orbitron', sans-serif;
+        background: #000;
       }
       p {
         margin: 0;
         padding: 0;
       }
+      .floatSep {
+        clear: both;
+      }
+      .listSpace {
+        display: inline-block;
+        width: 20px;
+      }
+
+      /* Top Div Style */
+      #topDivOuter {
+        margin: 0;
+        padding: 0;
+        height: 200px;
+        border-bottom: 1px solid #C00;
+        background: #222;
+      }
+      #topDiv {
+        margin: 0 auto;
+        padding: 0;
+        width: 1000px;
+      }
+      #topDiv p {
+        padding-top: 100px;
+        text-align: center;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 50px;
+        color: #FFF;
+      }
+      #topDiv p a {
+        color: #FFF;
+        text-decoration: none;
+      }
+      #topDiv p a:hover {
+        color: #C00;
+      }
+
+      /* Vertical Div Style */
+      .vertDivOuter {
+        margin: 0;
+        padding: 0;
+        height: 400px;
+      }
+      .vertDiv {
+        margin: 0 auto;
+        padding: 0;
+        width: 1000px;
+        height: 100%;
+      }
+      .leftTextDiv {
+        margin: 0;
+        padding: 0;
+        width: 500px;
+        height: 100%;
+        float: left;
+      }
+      .leftTextDiv ul {
+        margin: 30px 0 0 20px;
+        padding: 0;
+        list-style-type: none;
+        color: #DDD;
+        font-size: 20px;
+      }
+      .leftTextDiv ul a {
+        color: #DDD;
+        text-decoration: none;
+      }
+      .leftTextDiv a:hover {
+        color: #C00;
+      }
+      .listTitle {
+        font-size: 26px;
+        display: block;
+        margin-top: 40px;
+      }
+      .listTitle a {
+        color: #FFF;
+        text-decoration: none;
+      }
+      .rightImgDiv {
+        margin: 0;
+        padding: 0;
+        width: 500px;
+        height: 100%;
+        float: left;
+      }
+      #firstVert {
+        margin-top: 100px;
+      }
+
+      /* SSL Style */
+      #sslImg img {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #DDD;
+        max-width: 500px;
+      }
+      #sslImg img:hover {
+        cursor: pointer;
+        border: 1px solid #C00;
+      }
+
+      /* NASA Style */
+      #nasaImg img {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #DDD;
+        max-width: 500px;
+      }
+      #nasaImg img:hover {
+        cursor: pointer;
+        border: 1px solid #C00;
+      }
+
+      /* GPB Style */
+      #gpbImg img {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #DDD;
+        max-width: 500px;
+      }
+      #gpbImg img:hover {
+        cursor: pointer;
+        border: 1px solid #C00;
+      }
+
+
     </style>
   </head>
-
   <body>
-    <h1>Hello, welcome to Mike's page.</h1>
-    <p>
-      Edited on Cloud 9.
-    </p>
+    <div id="topDivOuter">
+      <div id="topDiv">
+        <p>
+          <a href="mailto:me@michaeladams.me">Michael Adams</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- SSL -->
+    <div class="vertDivOuter" id='firstVert'>
+      <div class="vertDiv">
+        <div class="leftTextDiv">
+          <p>
+            <span class='listTitle'><a href="http://sslmda.com/" target="_blank">Space Systems Loral</a></span></li>
+          </p>
+          <ul>
+            <li>Organization:<span class='listSpace'></span>SSL MDA</li>
+            <li>Location:<span class='listSpace'></span>Palo Alto, CA</li>
+            <!-- <li>Program:<span class='listSpace'></span>Various</span></li> -->
+            <li>Specialty:<span class='listSpace'></span>FSW Design</span></li>
+          </ul>
+        </div>
+        <div class="rightImgDiv" id='sslImg'>
+          <a href="http://sslmda.com/" target="_blank">
+            <img src="http://sslmda.com/images/products/renderings/directv14.jpg" alt="Satellite" id='sslSat'>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="floatSep"></div>
+
+    <!-- NASA -->
+    <div class="vertDivOuter" id='firstVert'>
+      <div class="vertDiv">
+        <div class="leftTextDiv">
+          <p>
+            <span class='listTitle'><a href="http://www.nasa.gov/mission_pages/ladee/main/" target="_blank">LADEE Lunar Orbiter</a></span></li>
+          </p>
+          <ul>
+            <li>Organization:<span class='listSpace'></span><a href="http://www.nasa.gov/centers/ames/home/" target="_blank">NASA Ames</a></li>
+            <li>Location:<span class='listSpace'></span>Moffett Field, CA</li>
+            <!-- <li>Program:<span class='listSpace'></span>LADEE Lunar Orbiter</span></li> -->
+            <li>Specialty:<span class='listSpace'></span>Satellite Simulation</span></li>
+          </ul>
+        </div>
+        <div class="rightImgDiv" id='nasaImg'>
+          <a href="http://www.nasa.gov/mission_pages/ladee/main/" target="_blank">
+            <img src="http://www.nasa.gov/sites/default/files/styles/946xvariable_height/public/acd13-0101-012.jpg?itok=E8nSdSPJ" alt="LADEE" id='ladeeSat'>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="floatSep"></div>
+
+    <!-- GP-B -->
+    <div class="vertDivOuter" id='firstVert'>
+      <div class="vertDiv">
+        <div class="leftTextDiv">
+          <p>
+            <span class='listTitle'><a href="https://einstein.stanford.edu/" target="_blank">Gravity Probe B</a></span></li>
+          </p>
+          <ul>
+            <li>Organization:<span class='listSpace'></span><a href="http://aa.stanford.edu/" target="_blank">Stanford</a></li>
+            <li>Location:<span class='listSpace'></span>Palo Alto, CA</li>
+            <!-- <li>Program:<span class='listSpace'></span>Gravity Probe B</span></li> -->
+            <li>Specialty:<span class='listSpace'></span>Control Systems</span></li>
+          </ul>
+        </div>
+        <div class="rightImgDiv" id='gpbImg'>
+          <a href="https://einstein.stanford.edu/" target="_blank">
+            <img src="http://science.nasa.gov/media/medialibrary/2011/05/04/twist_strip.jpg/image_full" alt="GPB" id='gpbSat'>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="floatSep"></div>
   </body>
 </html>
